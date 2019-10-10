@@ -1,90 +1,65 @@
 // Navigation Styles here
-.header{
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+
+  @media (max-width: @mobile) {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px; 
-
-    @media(max-width:500px){
-        
-            display: flex;
-            flex-direction: column;
-        }
-    
-    }
-  
-  
-  .header nav{
-    display: flex;
-	justify-content: flex-end;
-    flex-basis: 80%;
-    
-    @media(max-width:500px){
-       justify-content: space-evenly;
-        }
-    }
-
-  
-  
-  nav a {
-    padding: 20px;
-    color: grey;
-    text-decoration: none;
-    font-size: 15px;
-
+    flex-direction: column;
   }
-  
-  nav a:hover{
-    background: white;
-    color: red;
-    font-weight: bold;
-    cursor: pointer;
-  }
+}
 
-.fun-bus-image{
-    border-top: 1px dashed black;
-    @media(max-width:500px){
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80%;
+
+  @media (max-width: @mobile) {
+    justify-content: space-evenly;
+  }
+}
+
+nav a {
+  padding: 20px;
+  color: @shark;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+nav a:hover {
+  background: @white;
+  color: @sandy-beach;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fun-bus-image {
+  border-top: 1px dashed @shark;
+  @media (max-width: @mobile) {
     margin-left: 20px;
     margin-right: 20px;
-            
-        }
-    }
-
-
-
-.note{
-    border-bottom: 1px dashed black;
+  }
 }
 
-.btn{
-    border: 1px solid black;
-    width: 120px;
-    font-size: 15px;
-    padding-left: 16px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 8px;
-    background-color: teal;
-
-    @media(max-width:500px){
-        width: 350px;
-        color: white;
-        text-align: center;
-        padding: 20px 0px 20px 0px;
-    }
-
+.note {
+  border-bottom: 1px dashed @shark;
 }
 
+.btn {
+ .createButton(1px solid @shark, 120px, 15px, 16px, 10px, 10px, 8px, @eastern-blue);
 
-@media(max-width:500px){
-    .welcome{
-        margin-left: 20px;
-        margin-right: 20px;
-    }
+  @media (max-width: @mobile) {
+    width: 350px;
+    color: @white;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
 }
 
-
-
-
-
-
-
+@media (max-width: @mobile) {
+  .welcome {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

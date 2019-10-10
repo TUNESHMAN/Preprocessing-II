@@ -206,6 +206,52 @@ nav a:hover {
   border-radius: 8px;
   background-color: teal;
 }
+@media (max-width: 500px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .header nav {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    justify-content: center;
+    margin-left: 150px;
+  }
+}
+@media (max-width: 500px) {
+  .fun-bus-image {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .welcome {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .text-content {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .img-content {
+    margin-right: 20px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -222,6 +268,11 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    justify-content: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;

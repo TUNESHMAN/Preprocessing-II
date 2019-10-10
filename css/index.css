@@ -168,6 +168,44 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80%;
+}
+nav a {
+  padding: 20px;
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+}
+nav a:hover {
+  background: white;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.fun-bus-image {
+  border-top: 1px dashed black;
+}
+.note {
+  border-bottom: 1px dashed black;
+}
+.btn {
+  border: 1px solid black;
+  width: 120px;
+  font-size: 15px;
+  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  background-color: teal;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;

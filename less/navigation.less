@@ -3,14 +3,27 @@
     display: flex;
     justify-content: space-around;
     margin-top: 15px; 
-  }
+
+    @media(max-width:500px){
+        
+            display: flex;
+            flex-direction: column;
+        }
+    
+    }
+  
   
   .header nav{
     display: flex;
 	justify-content: flex-end;
-	flex-basis: 80%;
+    flex-basis: 80%;
+    
+    @media(max-width:500px){
+       justify-content: space-evenly;
+        }
+    }
 
-  }
+  
   
   nav a {
     padding: 20px;
@@ -29,8 +42,14 @@
 
 .fun-bus-image{
     border-top: 1px dashed black;
+    @media(max-width:500px){
+    margin-left: 20px;
+    margin-right: 20px;
+            
+        }
+    }
 
-}
+
 
 .note{
     border-bottom: 1px dashed black;
@@ -46,39 +65,15 @@
     border-radius: 8px;
     background-color: teal;
 
-}
-
-// MOBILE
-@media(max-width:500px){
-    .header{
-        display: flex;
-        flex-direction: column;
+    @media(max-width:500px){
+        width: 350px;
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 0px;
     }
 
 }
 
-@media(max-width:500px){
-    .header nav{
-        justify-content: space-evenly;
-    }
-}
-
-@media(max-width:500px){
-    h1{
-        justify-content: center;
-        margin-left: 150px;
-        
-    }
-}
-
-
-@media(max-width:500px){
-    .fun-bus-image{
-        margin-left: 20px;
-        margin-right: 20px;
-        
-    }
-}
 
 @media(max-width:500px){
     .welcome{
@@ -87,25 +82,9 @@
     }
 }
 
-@media(max-width:500px){
-    .content-pick{
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-        
-    }
-}
 
 
 
 
-@media(max-width:500px){
-    .text-content{
-        margin-left: 20px;
-    }
-}
-@media(max-width:500px){
-    .img-content{
-        margin-right: 20px;
-    }
-}
+
+

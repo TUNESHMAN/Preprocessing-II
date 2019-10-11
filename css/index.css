@@ -195,7 +195,7 @@ img {
     justify-content: space-evenly;
   }
 }
-nav a {
+.header a {
   padding: 20px;
   color: #212529;
   text-decoration: none;

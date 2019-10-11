@@ -8,23 +8,23 @@
     display: flex;
     flex-direction: column;
   }
-}
 
-.header nav {
-  display: flex;
-  justify-content: flex-end;
-  flex-basis: 80%;
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 80%;
 
-  @media (max-width: @mobile) {
-    justify-content: space-evenly;
+    @media (max-width: @mobile) {
+      justify-content: space-evenly;
+    }
   }
-}
 
-nav a {
-  padding: 20px;
-  color: @shark;
-  text-decoration: none;
-  font-size: 15px;
+  a {
+    padding: 20px;
+    color: @shark;
+    text-decoration: none;
+    font-size: 15px;
+  }
 }
 
 nav a:hover {
@@ -47,7 +47,16 @@ nav a:hover {
 }
 
 .btn {
- .createButton(1px solid @shark, 120px, 15px, 16px, 10px, 10px, 8px, @eastern-blue);
+  .createButton(
+    1px solid @shark,
+    120px,
+    15px,
+    16px,
+    10px,
+    10px,
+    8px,
+    @eastern-blue
+  );
 
   @media (max-width: @mobile) {
     width: 350px;

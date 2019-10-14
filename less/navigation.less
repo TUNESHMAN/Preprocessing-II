@@ -1,1 +1,74 @@
 // Navigation Styles here
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+
+  @media (max-width: @mobile) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-basis: 80%;
+
+    @media (max-width: @mobile) {
+      justify-content: space-evenly;
+    }
+  }
+
+  a {
+    padding: 20px;
+    color: @shark;
+    text-decoration: none;
+    font-size: 15px;
+  }
+}
+
+nav a:hover {
+  background: @white;
+  color: @sandy-beach;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fun-bus-image {
+  border-top: 1px dashed @shark;
+  @media (max-width: @mobile) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.note {
+  border-bottom: 1px dashed @shark;
+}
+
+.btn {
+  .createButton(
+    1px solid @shark,
+    120px,
+    15px,
+    16px,
+    10px,
+    10px,
+    8px,
+    @eastern-blue
+  );
+
+  @media(max-width: @mobile)  {
+    width: 350px;
+    color: @white;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+@media (max-width: @mobile) {
+  .welcome {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
